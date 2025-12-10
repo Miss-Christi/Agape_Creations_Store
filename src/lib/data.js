@@ -123,7 +123,7 @@ export const PRODUCTS = [
       category: "Stationery", 
       name: "Gold Foil Bookmarks - Set of 5", 
       basePrice: 99, 
-      image: "https://images.unsplash.com/photo-1630325407008-8e6df41c53e0?auto=format&fit=crop&w=800&q=80", 
+      image: "https://m.media-amazon.com/images/I/81wI5kbPDAL.jpg", 
       description: "Elegantly designed bookmarks with shimmering gold-foil accents. Durable yet lightweight, these bookmarks make beautiful gifts and thoughtful inserts for journals or devotionals.", 
       hasVariants: false 
     },
@@ -142,7 +142,7 @@ export const PRODUCTS = [
       category: "Stationery",
       basePrice: 249,
       description: "A hardcover journal with thick 200 GSM pages designed to be ink-friendly and bleed-resistant. Perfect for recording thoughts, prayers, sermon notes, and personal goals in a beautifully structured format.",
-      image: "/api/placeholder/600/800",
+      image: "https://plus.unsplash.com/premium_photo-1679404108831-417d6561746b?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       hasVariants: false
     },
     {
@@ -151,7 +151,7 @@ export const PRODUCTS = [
       category: "Stationery",
       basePrice: 120,
       description: "A matte-finish art print featuring the full text of the Beatitudes in an elegant, modern layout. Ideal for prayer spaces, offices, or living rooms. Available in multiple sizes to suit any décor.",
-      image: "/api/placeholder/600/800",
+      image: "https://www.shutterstock.com/image-vector/verse-about-light-christian-poster-600nw-2639787873.jpg",
       hasVariants: true,
       variants: [
         { name: "Size", options: ["A5 ($12)", "A4 ($18)", "A3 ($25)"] }
@@ -174,7 +174,7 @@ export const PRODUCTS = [
       category: "Posters", 
       name: "Psalm 23 Minimalist", 
       basePrice: 49, 
-      image: "https://images.unsplash.com/photo-1582201943021-e8e1f411334b?auto=format&fit=crop&w=800&q=80", 
+      image: "https://i0.wp.com/www.flandersfamily.info/web/wp-content/uploads/2024/07/23rd-Psalm-Printable-IG.png?fit=1200%2C1200&ssl=1", 
       hasVariants: true, 
       description: "A serene and minimal print featuring the beloved Psalm 23. Designed with soft typography and spacious layout to evoke peace and reflection.", 
       variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] 
@@ -243,7 +243,7 @@ export const PRODUCTS = [
       category: "Tech",
       basePrice: 150,
       description: "A sleek vinyl laptop skin printed with the comforting message 'Be Still.' Resistant to scratches and bubbling, and easy to apply to most 13–15 inch laptops.",
-      image: "/api/placeholder/600/800",
+      image: "https://i.pinimg.com/736x/07/60/e8/0760e8bf5f0e34118617fa280b53f782.jpg",
       hasVariants: false
     },
 
@@ -253,7 +253,7 @@ export const PRODUCTS = [
       category: "Home", 
       name: "Morning Mercy Mug", 
       basePrice: 449, 
-      image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3f?auto=format&fit=crop&w=800&q=80", 
+      image: "https://images.unsplash.com/photo-1617283433230-e0ef1af00cfc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
       description: "A ceramic 12oz mug with a smooth finish, perfect for morning coffee or tea. Features an encouraging reminder of fresh mercies each day. Dishwasher and microwave safe.", 
       hasVariants: false 
     },
@@ -291,7 +291,7 @@ export const PRODUCTS = [
       category: "Accessories",
       basePrice: 199,
       description: "A durable canvas tote inspired by the peaceful spirit of St. Francis. Designed for everyday carry, offering ample space for books, groceries, or personal items with comfortable shoulder straps.",
-      image: "/api/placeholder/600/800",
+      image: "https://i.pinimg.com/736x/b4/e2/15/b4e2156269f6f132721667cd12bfed7c.jpg",
       hasVariants: false
     },
   ];

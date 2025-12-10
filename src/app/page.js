@@ -6,6 +6,7 @@ import ProductCard from "../components/ProductCard";
 import Header from "../components/Header"; 
 import CartDrawer from "../components/CartDrawer";
 import ProductDrawer from "../components/ProductDrawer";
+import Subscription from './Subscription';
 import Footer from "../components/Footer";
 import HeroCarousel from "../components/HeroCarousel";
 import CategoryBar from "../components/CategoryBar";
@@ -195,29 +196,8 @@ export default function Home() {
       </div>
 
       {/* 9. SUBSCRIBE */}
-      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 py-16 border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Join Our Community</h2>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-lg">
-            Subscribe to receive encouragement, exclusive offers, and early access to our new faith-inspired collections.
-          </p>
-          
-          <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
-            <input 
-              type="email" 
-              placeholder="Enter your email address" 
-              className="flex-1 appearance-none border border-gray-300 w-full py-3 px-5 bg-white text-gray-700 placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent shadow-sm"
-            />
-            <button className="w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-purple-900 hover:bg-purple-400 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-              Subscribe
-            </button>
-          </div>
-          
-          <p className="mt-4 text-xs text-gray-400">
-            We respect your privacy. No spam, ever.
-          </p>
-        </div>
-      </div>
+      <Newsletter />
+      
       <Footer />
     </div>
   );

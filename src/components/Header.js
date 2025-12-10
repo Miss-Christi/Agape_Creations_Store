@@ -16,11 +16,11 @@ export default function Header() {
         <header className="fixed top-0 w-full z-40 bg-[#F9F7FC]/95 backdrop-blur-xl border-b border-purple-100 text-[#2E2433] transition-all duration-300 shadow-sm">        <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
           <div className="flex gap-4 items-center">
             <button onClick={toggleMenu} className="hover:text-[#9f4a3e]"><Menu /></button>
-            <button onClick={() => alert("Search feature coming soon!")} className="hidden md:block opacity-60 hover:opacity-100"><Search size={20}/></button>
+            {/*<button onClick={() => alert("Search feature coming soon!")} className="hidden md:block opacity-60 hover:opacity-100"><Search size={20}/></button>*/}
           </div>
 
           <div className="text-3xl font-serif font-bold tracking-tighter cursor-pointer" onClick={() => setCategory("All")}>
-            AGAPE.
+            AGAPE
           </div>
 
           <div className="flex gap-6 items-center">
@@ -42,7 +42,7 @@ export default function Header() {
         </div>
         <nav className="text-gray p-6 space-y-2">
           {["All Products", "Apparel", "Stationery", "Home", "Gifts"].map((item) => (
-            <button key={item} onClick={() => handleLinkClick(item)} className="w-full flex justify-between py-4 border-b border-stone-100 text-left hover:text-[#ffffff] hover:pl-2 transition-all">
+            <button key={item} onClick={() => handleLinkClick(item)} className="w-full flex justify-between py-4 text-purple-900 border-b border-stone-900 text-left hover:text-[#ffffff] hover:pl-2 transition-all">
               {item} <ChevronRight size={16} className="text-gray-900"/>
             </button>
           ))}
