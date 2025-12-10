@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Lilac & Purpose Palette */
+  --background: #e2d0f2;    /* Very pale lilac-white */
+  --foreground: #2E2433;    /* Deep Slate/Violet (Text) */
+  --text-muted: #5D4B66;    /* Dark Muted Purple (Secondary Text - Legible) */
+  --text-light: #6B5A75;    /* For secondary text, still legible */
+  --accent: #BFA2DB;        /* Lilac (Buttons/Highlights) */
+  --accent-dark: #8C6A9E;   /* Darker Purple (Hover states) */
+  --card-bg: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide scrollbar for Category Bar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
