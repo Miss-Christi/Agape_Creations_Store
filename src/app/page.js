@@ -2,6 +2,7 @@
 import { useStore } from "../store/useStore";
 import { getProducts } from "../lib/data";
 import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
 import ProductCard from "../components/ProductCard";
 import Header from "../components/Header"; 
 import CartDrawer from "../components/CartDrawer";
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#d3b3f0] flex flex-col font-sans">
+      <Loading />
       <Header />
       <CartDrawer />
       <ProductDrawer />
