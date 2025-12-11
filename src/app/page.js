@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 import Header from "../components/Header"; 
 import CartDrawer from "../components/CartDrawer";
 import ProductDrawer from "../components/ProductDrawer";
-import Subscription from './Subscription';
+import Subscription from "../components/Subscription";
 import Footer from "../components/Footer";
 import HeroCarousel from "../components/HeroCarousel";
 import CategoryBar from "../components/CategoryBar";

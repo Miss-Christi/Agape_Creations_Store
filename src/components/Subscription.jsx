@@ -14,8 +14,8 @@ export default function Subscription() {
     const formData = new FormData(event.target);
 
     // KEY SETTINGS
-    formData.append("access_key", "76e0e92a-b0da-49f1-ae79-d447e5f83732");
-    formData.append("subject", "New Newsletter Subscriber"); // Subject line for your email
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("subject", "New Subscription Request");
     formData.append("from_name", "Agape Website");
 
     try {
@@ -67,7 +67,7 @@ export default function Subscription() {
             <button 
               type="submit" 
               disabled={isSubmitting}
-              className="w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-purple-700 hover:bg-purple-900 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-800 hover:bg-indigo-900 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "..." : "Subscribe"}
             </button>
