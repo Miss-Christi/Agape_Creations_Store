@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import { useEffect } from "react";
 import { useStore } from '@/store/useStore';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
