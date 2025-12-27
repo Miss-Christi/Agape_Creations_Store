@@ -20,6 +20,10 @@ export default function Home() {
     getProducts().then(setProducts);
   }, []);
 
+  // --- CHANGE 1: Calculate Categories Dynamically ---
+  // This ensures "Bookmarks", "Posters", etc. appear automatically
+  const categories = ["All", ...new Set(products.map((p) => p.category))];
+
   // Filter Logic controls ONLY the main grid
   const filteredProducts = selectedCategory === "All" 
     ? products 
@@ -81,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* 4. CATEGORY BAR (Sticky) */}
-      <CategoryBar />
+      <CategoryBar categories={categories} />
 
       {/* 5. MAIN FILTERED GRID */}
       <section id="shop-grid" className="max-w-7xl mx-auto px-6 py-16 min-h-[50vh]">
@@ -108,9 +112,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl font-serif text-[#2E2433] mb-12 text-center">Community Favorites</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {products.slice(2, 5).map((product) => (
+                {/* --- CHANGE 3: Update slice to show Posters/Skins instead of just Bookmarks --- */}
+                {/* Using indices 23-26 shows Posters from your new list */}
+                {products.length > 0 ? products.slice(23, 26).map((product) => (
                     <ProductCard key={`bs-${product.id}`} product={product} />
-                ))}
+                )) : (
+                    // Fallback loading skeletons if needed, or just empty
+                    <div className="col-span-3 text-center text-gray-400">Loading Bestsellers...</div>
+                )}
             </div>
         </div>
       </section>

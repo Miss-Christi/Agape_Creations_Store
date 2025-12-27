@@ -1,679 +1,211 @@
 /* Mini Database */
 export const PRODUCTS = [
-        
-      // --- BOOKMARKS ---
-      { id: "bk1", category: "Bookmarks", name: "Let Your Light Shine", basePrice: 79, image: "https://placeholder.co/bk1.jpg", description: "Bright, uplifting typography reminding you to live boldly in faith. A daily encouragement tucked into every page.", hasVariants: false },
-      { id: "bk2", category: "Bookmarks", name: "Turn the Page, Chase the Dream", basePrice: 79, image: "https://placeholder.co/bk2.jpg", description: "A gentle nudge toward hope and perseverance. Perfect for readers who see books as journeys.", hasVariants: false },
-      { id: "bk3", category: "Bookmarks", name: "Jeremiah 29:11 Promise", basePrice: 79, image: "https://placeholder.co/bk3.jpg", description: "Scripture-based bookmark reminding you of God’s plans and faithfulness.", hasVariants: false },
-      { id: "bk4", category: "Bookmarks", name: "Faith – Hebrews 11:1", basePrice: 79, image: "https://placeholder.co/bk4.jpg", description: "Minimal scripture design centred on assurance and hope.", hasVariants: false },
-      { id: "bk5", category: "Bookmarks", name: "We Love Because He Loved Us", basePrice: 79, image: "https://placeholder.co/bk5.jpg", description: "A soft, reflective reminder of God’s first love.", hasVariants: false },
-      { id: "bk6", category: "Bookmarks", name: "Be Still and Know", basePrice: 79, image: "https://placeholder.co/bk6.jpg", description: "Psalm-inspired design encouraging stillness and trust.", hasVariants: false },
-      { id: "bk7", category: "Bookmarks", name: "God Is Love", basePrice: 79, image: "https://placeholder.co/bk7.jpg", description: "Simple declaration of God’s nature, perfect for daily reflection.", hasVariants: false },
-      { id: "bk8", category: "Bookmarks", name: "Restless Until They Rest in You", basePrice: 79, image: "https://placeholder.co/bk8.jpg", description: "Augustinian-inspired quote for thoughtful readers.", hasVariants: false },
-    
-      { id: "bk9", category: "Bookmarks", name: "New Creation – 2 Corinthians 5:17", basePrice: 79, image: "https://placeholder.co/bk9.jpg", description: "A fresh start captured in scripture and art.", hasVariants: false },
-      { id: "bk10", category: "Bookmarks", name: "For God So Loved the World", basePrice: 79, image: "https://placeholder.co/bk10.jpg", description: "Classic John 3:16 bookmark with warm tones.", hasVariants: false },
-      { id: "bk11", category: "Bookmarks", name: "The Lord Is With You", basePrice: 79, image: "https://placeholder.co/bk11.jpg", description: "Joshua 1:9 encouragement for courage and confidence.", hasVariants: false },
-      { id: "bk12", category: "Bookmarks", name: "As the Deer Longs", basePrice: 79, image: "https://placeholder.co/bk12.jpg", description: "Psalm-inspired imagery symbolising spiritual longing.", hasVariants: false },
-      { id: "bk13", category: "Bookmarks", name: "Hope in the Lord", basePrice: 79, image: "https://placeholder.co/bk13.jpg", description: "Renewal and strength captured in scripture.", hasVariants: false },
-      { id: "bk14", category: "Bookmarks", name: "Faith Can Move Mountains", basePrice: 79, image: "https://placeholder.co/bk14.jpg", description: "Bold declaration paired with landscape art.", hasVariants: false },
-      { id: "bk15", category: "Bookmarks", name: "Lost in the Pages", basePrice: 79, image: "https://placeholder.co/bk15.jpg", description: "A calm, book-lover-friendly design with faith undertones.", hasVariants: false },
-    
-      { id: "bk16", category: "Bookmarks", name: "Bloom Where You Are", basePrice: 79, image: "https://placeholder.co/bk16.jpg", description: "Encouraging growth and faithfulness wherever life places you.", hasVariants: false },
-      { id: "bk17", category: "Bookmarks", name: "Faith Hope Love – 1 Corinthians 13", basePrice: 79, image: "https://placeholder.co/bk17.jpg", description: "Elegant scripture bookmark highlighting love above all.", hasVariants: false },
-      { id: "bk18", category: "Bookmarks", name: "One Page at a Time", basePrice: 79, image: "https://placeholder.co/bk18.jpg", description: "Gentle reminder to grow steadily in faith and life.", hasVariants: false },
-      { id: "bk19", category: "Bookmarks", name: "Greater Love Has No One", basePrice: 79, image: "https://placeholder.co/bk19.jpg", description: "A powerful verse reflecting sacrifice and devotion.", hasVariants: false },
-    
-      { id: "bk20", category: "Bookmarks", name: "Dreams Blossom in Silence", basePrice: 79, image: "https://placeholder.co/bk20.jpg", description: "Soft abstract art encouraging patience and trust.", hasVariants: false },
-      { id: "bk21", category: "Bookmarks", name: "His Mercies Are New Every Morning", basePrice: 79, image: "https://placeholder.co/bk21.jpg", description: "Hope-filled bookmark inspired by Lamentations.", hasVariants: false },
-      { id: "bk22", category: "Bookmarks", name: "Let All That You Do Be Done in Love", basePrice: 79, image: "https://placeholder.co/bk22.jpg", description: "Scripture-based reminder for daily living.", hasVariants: false },
-      { id: "bk23", category: "Bookmarks", name: "Do Not Fear, I Am With You", basePrice: 79, image: "https://placeholder.co/bk23.jpg", description: "Isaiah-inspired encouragement bookmark.", hasVariants: false },
-    
-    // --- POSTERS ---
-      {
-        id: "po1",
-        category: "Posters",
-        name: "Faith Is the Assurance – Hebrews 11:1",
-        basePrice: 199,
-        image: "https://placeholder.co/po1.jpg",
-        description: "Minimal typographic poster reflecting faith in the unseen and trust in God’s promises.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po2",
-        category: "Posters",
-        name: "Hope – Jeremiah 29:11",
-        basePrice: 199,
-        image: "https://placeholder.co/po2.jpg",
-        description: "Scripture poster reminding of God’s plans to prosper and give hope for the future.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po3",
-        category: "Posters",
-        name: "Love – John 3:16",
-        basePrice: 199,
-        image: "https://placeholder.co/po3.jpg",
-        description: "Soft pastel scripture poster centred on sacrificial and unconditional love.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po4",
-        category: "Posters",
-        name: "Fearfully and Wonderfully Made",
-        basePrice: 249,
-        image: "https://placeholder.co/po4.jpg",
-        description: "Psalm 139:14 inspired artwork celebrating identity, worth, and divine creation.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po5",
-        category: "Posters",
-        name: "Jesus With the Heroes",
-        basePrice: 299,
-        image: "https://placeholder.co/po5.jpg",
-        description: "Creative illustration portraying Jesus above all cultural and historical heroes.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po6",
-        category: "Posters",
-        name: "Hallelujah – Meaning & Origin",
-        basePrice: 249,
-        image: "https://placeholder.co/po6.jpg",
-        description: "Typography poster explaining the meaning and roots of the word Hallelujah.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po7",
-        category: "Posters",
-        name: "While We Were Still Sinners",
-        basePrice: 249,
-        image: "https://placeholder.co/po7.jpg",
-        description: "Bold visual reminder of Christ’s sacrifice and unconditional love.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po8",
-        category: "Posters",
-        name: "Forever Kinda Love – Adoration",
-        basePrice: 249,
-        image: "https://placeholder.co/po8.jpg",
-        description: "Eucharistic-inspired artwork reflecting Christ’s eternal presence in adoration.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po9",
-        category: "Posters",
-        name: "Jesus – Digital Art Portrait",
-        basePrice: 299,
-        image: "https://placeholder.co/po9.jpg",
-        description: "Modern digital illustration of Jesus with a calm and contemporary aesthetic.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po10",
-        category: "Posters",
-        name: "Jesus Hugging a Girl",
-        basePrice: 299,
-        image: "https://placeholder.co/po10.jpg",
-        description: "Tender illustration symbolising comfort, protection, and healing in Christ.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po11",
-        category: "Posters",
-        name: "Psalm 23 – The Lord Is My Shepherd",
-        basePrice: 249,
-        image: "https://placeholder.co/po11.jpg",
-        description: "Comforting scripture poster inspired by Psalm 23 and God’s guidance.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po12",
-        category: "Posters",
-        name: "Psalm 91 – He Who Dwells",
-        basePrice: 249,
-        image: "https://placeholder.co/po12.jpg",
-        description: "Full Psalm 91 displayed in an editorial-style layout symbolising refuge.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po13",
-        category: "Posters",
-        name: "Psalm 91:4 – Under His Wings",
-        basePrice: 249,
-        image: "https://placeholder.co/po13.jpg",
-        description: "Verse-focused poster highlighting protection under God’s wings.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po14",
-        category: "Posters",
-        name: "The Way, the Truth, and the Life",
-        basePrice: 199,
-        image: "https://placeholder.co/po14.jpg",
-        description: "John 14:6 inspired typography declaring Christ as the only way.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po15",
-        category: "Posters",
-        name: "The Good Shepherd – Classic",
-        basePrice: 299,
-        image: "https://placeholder.co/po15.jpg",
-        description: "Gentle illustration of Jesus holding the lamb, symbolising care and redemption.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po16",
-        category: "Posters",
-        name: "The Good Shepherd – Cute Style",
-        basePrice: 299,
-        image: "https://placeholder.co/po16.jpg",
-        description: "Soft, childlike illustration of Jesus as the Good Shepherd.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po17",
-        category: "Posters",
-        name: "Cross of Flowers",
-        basePrice: 249,
-        image: "https://placeholder.co/po17.jpg",
-        description: "Floral cross artwork symbolising life, beauty, and redemption.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po18",
-        category: "Posters",
-        name: "Cross – Watercolor",
-        basePrice: 249,
-        image: "https://placeholder.co/po18.jpg",
-        description: "Soft watercolor cross expressing sacrifice, grace, and reverence.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po19",
-        category: "Posters",
-        name: "Wanted – The 100th Sheep",
-        basePrice: 249,
-        image: "https://placeholder.co/po19.jpg",
-        description: "Creative illustration inspired by the parable of the lost sheep and God’s pursuit.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po20",
-        category: "Posters",
-        name: "Whatever It Takes",
-        basePrice: 249,
-        image: "https://placeholder.co/po20.jpg",
-        description: "Bold declaration of sacrifice and commitment rooted in the cross.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po21",
-        category: "Posters",
-        name: "You Are Loved",
-        basePrice: 199,
-        image: "https://placeholder.co/po21.jpg",
-        description: "Minimal affirmation poster declaring unconditional love and worth.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po22",
-        category: "Posters",
-        name: "I'd Rather Have Jesus",
-        basePrice: 199,
-        image: "https://placeholder.co/po22.jpg",
-        description: "Faith-forward declaration choosing Christ above all else.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po23",
-        category: "Posters",
-        name: "Blessed",
-        basePrice: 199,
-        image: "https://placeholder.co/po23.jpg",
-        description: "Simple, calming typography reminding of God’s blessings.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po24",
-        category: "Posters",
-        name: "Saved by Grace",
-        basePrice: 199,
-        image: "https://placeholder.co/po24.jpg",
-        description: "Modern typography celebrating salvation through grace alone.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po25",
-        category: "Posters",
-        name: "Holy, Holy, Holy",
-        basePrice: 199,
-        image: "https://placeholder.co/po25.jpg",
-        description: "Worship-inspired typography focused on reverence and praise.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po26",
-        category: "Posters",
-        name: "Chosen, Loved, Beautiful",
-        basePrice: 199,
-        image: "https://placeholder.co/po26.jpg",
-        description: "Affirmation-based typography celebrating identity in Christ.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po27",
-        category: "Posters",
-        name: "Daughter of the King – Light Skin",
-        basePrice: 199,
-        image: "https://placeholder.co/po27.jpg",
-        description: "Identity poster affirming belonging and worth in Christ.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-      {
-        id: "po28",
-        category: "Posters",
-        name: "Daughter of the King – Dark Skin",
-        basePrice: 199,
-        image: "https://placeholder.co/po28.jpg",
-        description: "Alternate illustration celebrating representation and identity.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po29",
-        category: "Posters",
-        name: "Ave Maria",
-        basePrice: 299,
-        image: "https://placeholder.co/po29.jpg",
-        description: "Gentle Marian illustration suitable for prayer corners and sacred spaces.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
-    
-      {
-        id: "po30",
-        category: "Posters",
-        name: "The Boss  Jesus (The Chosen)",
-        basePrice: 299,
-        image: "https://placeholder.co/po30.jpg",
-        description: "Bold poster portraying Jesus as authority and leader, inspired by The Chosen.",
-        hasVariants: true,
-        variants: [{ name: "Size", options: ["A5", "A4", "A3"] }]
-      },
+    // FILE 1: LAPTOP SKINS (Pages 1-11)
+    { id: "ls1", category: "Laptop Skins", name: "Catholic Collage", basePrice: 299, image: getPath("laptop_skins", 1), description: "Minimalist Jesus typography design.", hasVariants: false },
+    { id: "ls2", category: "Laptop Skins", name: "Thy Will Be Done", basePrice: 299, image: getPath("laptop_skins", 2), description: "Luke 22:42 inspired prayer design.", hasVariants: false },
+    { id: "ls3", category: "Laptop Skins", name: "First Loved", basePrice: 299, image: getPath("laptop_skins", 3), description: "1 John 4:19 - We love because He first loved us.", hasVariants: false },
+    { id: "ls4", category: "Laptop Skins", name: "The Boss", basePrice: 299, image: getPath("laptop_skins", 4), description: "Leadership / God is in charge design.", hasVariants: false },
+    { id: "ls5", category: "Laptop Skins", name: "Fishers of Men", basePrice: 299, image: getPath("laptop_skins", 5), description: "Evangelical theme inspired by the Gospels.", hasVariants: false },
+    { id: "ls6", category: "Laptop Skins", name: "Be Strong & Courageous", basePrice: 299, image: getPath("laptop_skins", 6), description: "Joshua 1:9 verse design: Do not be afraid.", hasVariants: false },
+    { id: "ls7", category: "Laptop Skins", name: "Original Love Letters", basePrice: 299, image: getPath("laptop_skins", 7), description: "Bible design with 'OXOX' motif.", hasVariants: false },
+    { id: "ls8", category: "Laptop Skins", name: "Fight My Battles", basePrice: 299, image: getPath("laptop_skins", 8), description: "This is how I fight my battles.", hasVariants: false },
+    { id: "ls9", category: "Laptop Skins", name: "Daughter of the King", basePrice: 299, image: getPath("laptop_skins", 9), description: "Royal identity affirmation.", hasVariants: false },
+    { id: "ls10", category: "Laptop Skins", name: "Reckless Love", basePrice: 299, image: getPath("laptop_skins", 10), description: "Overwhelming, never-ending, reckless love of God.", hasVariants: false },
+    { id: "ls11", category: "Laptop Skins", name: "Adonai Elohim", basePrice: 299, image: getPath("laptop_skins", 11), description: "Hebrew names of God design.", hasVariants: false },
+    { id: "ls12", category: "Laptop Skins", name: "Rejoice Always", basePrice: 299, image: getPath("laptop_skins", 12), description: "1 Thessalonians 5:16-18 reminder to pray continually.", hasVariants: false },
+    { id: "ls13", category: "Laptop Skins", name: "Your Will Be Done", basePrice: 299, image: getPath("laptop_skins", 13), description: "Luke 22:42 prayer design (Page 2 variant).", hasVariants: false },
+    { id: "ls14", category: "Laptop Skins", name: "Think Positively List", basePrice: 299, image: getPath("laptop_skins", 14), description: "Checklist: Network Well, Exercise Daily, Eat Healthy, etc.", hasVariants: false },
 
-      // --- DIARIES ---
-      {
-        id: "di1",
-        category: "Diaries",
-        name: "Watercolor Cross Diary",
-        basePrice: 499,
-        image: "https://placeholder.co/di1.jpg",
-        description: "A soft watercolor cross design symbolising sacrifice, grace, and quiet reflection. Ideal for prayer journaling and personal notes.",
-        hasVariants: false
-      },
-      {
-        id: "di2",
-        category: "Diaries",
-        name: "Trust in the Lord Diary",
-        basePrice: 499,
-        image: "https://placeholder.co/di2.jpg",
-        description: "Inspired by Proverbs, this diary encourages surrender, faith, and wholehearted trust in God.",
-        hasVariants: false
-      },
-      {
-        id: "di3",
-        category: "Diaries",
-        name: "For I Know the Plans – Daughter of the King",
-        basePrice: 549,
-        image: "https://placeholder.co/di3.jpg",
-        description: "A Jeremiah 29:11 inspired design blended with Daughter of the King identity. Created for purpose-filled journaling.",
-        hasVariants: false
-      },
-      {
-        id: "di4",
-        category: "Diaries",
-        name: "The Boss – Jesus (The Chosen)",
-        basePrice: 549,
-        image: "https://placeholder.co/di4.jpg",
-        description: "Bold diary design portraying Jesus as authority and leader, inspired by The Chosen series.",
-        hasVariants: false
-      },
-      {
-        id: "di5",
-        category: "Diaries",
-        name: "Chosen, Loved, Beautiful Diary",
-        basePrice: 499,
-        image: "https://placeholder.co/di5.jpg",
-        description: "Affirmation-based diary celebrating identity, worth, and belonging in Christ.",
-        hasVariants: false
-      },
-      {
-        id: "di6",
-        category: "Diaries",
-        name: "Daughter of the King – Light Skin Diary",
-        basePrice: 499,
-        image: "https://placeholder.co/di6.jpg",
-        description: "An identity-affirming diary reminding you of your royal worth and calling in Christ.",
-        hasVariants: false
-      },
-      {
-        id: "di7",
-        category: "Diaries",
-        name: "Daughter of the King – Dark Skin Diary",
-        basePrice: 499,
-        image: "https://placeholder.co/di7.jpg",
-        description: "A representation-focused design celebrating dignity, identity, and faith.",
-        hasVariants: false
-      },
-      {
-        id: "di8",
-        category: "Diaries",
-        name: "Psalm 91 – Under His Wings Diary",
-        basePrice: 549,
-        image: "https://placeholder.co/di8.jpg",
-        description: "Psalm 91:4 inspired diary highlighting refuge, protection, and God’s covering wings.",
-        hasVariants: false
-      },
-      {
-        id: "di9",
-        category: "Diaries",
-        name: "Yeshua – Lion of Judah",
-        basePrice: 599,
-        image: "https://placeholder.co/di9.jpg",
-        description: "Powerful artwork of Yeshua as the Lion of Judah, symbolising authority, victory, and kingship.",
-        hasVariants: false
-      },
-      {
-        id: "di10",
-        category: "Diaries",
-        name: "With God All Things Are Possible",
-        basePrice: 499,
-        image: "https://placeholder.co/di10.jpg",
-        description: "Faith-forward typography diary inspired by Matthew 19:26, created to fuel hope and perseverance.",
-        hasVariants: false
-      },
-      {
-        id: "di11",
-        category: "Diaries",
-        name: "Just a Girl Who Loves Jesus",
-        basePrice: 499,
-        image: "https://placeholder.co/di11.jpg",
-        description: "Soft, modern diary design celebrating simple, everyday love for Jesus.",
-        hasVariants: false
-      },
-      {
-        id: "di12",
-        category: "Diaries",
-        name: "Saved by Grace Diary",
-        basePrice: 499,
-        image: "https://placeholder.co/di12.jpg",
-        description: "Minimal typography diary celebrating salvation through grace alone.",
-        hasVariants: false
-      },
-      {
-        id: "di13",
-        category: "Diaries",
-        name: "Let All That You Do Be Done in Love",
-        basePrice: 499,
-        image: "https://placeholder.co/di13.jpg",
-        description: "Scripture-inspired diary encouraging love as the foundation of all actions and decisions.",
-        hasVariants: false
-      },
+    // FILE 1: STICKERS (Pages 12-14)
+    // --- Page 12 Items ---
+    { id: "st1", category: "Stickers", name: "Forgiven", basePrice: 99, image: getPath("stickers", 1), description: "Assurance of salvation.", hasVariants: false },
+    { id: "st2", category: "Stickers", name: "Te Amo", basePrice: 99, image: getPath("stickers", 2), description: "Spanish for 'I Love You'.", hasVariants: false },
+    { id: "st3", category: "Stickers", name: "You Are Loved", basePrice: 99, image: getPath("stickers", 3), description: "Simple affirmation design.", hasVariants: false },
+    { id: "st4", category: "Stickers", name: "Coffee", basePrice: 99, image: getPath("stickers", 4), description: "For the coffee lovers.", hasVariants: false },
+    { id: "st5", category: "Stickers", name: "Be The Light", basePrice: 99, image: getPath("stickers", 5), description: "Matthew 5:14 inspired.", hasVariants: false },
+    { id: "st6", category: "Stickers", name: "Faith (Minimal)", basePrice: 99, image: getPath("stickers", 6), description: "Minimalist Faith typography.", hasVariants: false },
+    { id: "st7", category: "Stickers", name: "Believe", basePrice: 99, image: getPath("stickers", 7), description: "Simple Believe typography.", hasVariants: false },
+    { id: "st8", category: "Stickers", name: "Daughter of the King", basePrice: 99, image: getPath("stickers", 8), description: "Royal identity affirmation.", hasVariants: false },
+    { id: "st9", category: "Stickers", name: "Blessed", basePrice: 99, image: getPath("stickers", 9), description: "Simple Blessed typography.", hasVariants: false },
+    { id: "st10", category: "Stickers", name: "Pray More Worry Less", basePrice: 99, image: getPath("stickers", 10), description: "Reminder to turn anxiety into prayer.", hasVariants: false },
+    { id: "st11", category: "Stickers", name: "Saved By Grace", basePrice: 99, image: getPath("stickers", 11), description: "Ephesians 2:8 inspired design.", hasVariants: false },
+    { id: "st12", category: "Stickers", name: "Hope", basePrice: 99, image: getPath("stickers", 12), description: "Minimalist Hope typography.", hasVariants: false },
+    { id: "st13", category: "Stickers", name: "Love", basePrice: 99, image: getPath("stickers", 13), description: "Minimalist Love typography.", hasVariants: false },
+    { id: "st14", category: "Stickers", name: "Jesus Loves You", basePrice: 99, image: getPath("stickers", 14), description: "Evangelistic message.", hasVariants: false },
+    { id: "st15", category: "Stickers", name: "YHWH", basePrice: 99, image: getPath("stickers", 15), description: "The Tetragrammaton / Name of God.", hasVariants: false },
+    { id: "st16", category: "Stickers", name: "Fight My Battles", basePrice: 99, image: getPath("stickers", 16), description: "This is how I fight my battles.", hasVariants: false },
+    { id: "st17", category: "Stickers", name: "Kind Words / Honey", basePrice: 99, image: getPath("stickers", 17), description: "Kind words are like honey sweet to the soul.", hasVariants: false },
+    { id: "st18", category: "Stickers", name: "Psalm 91:4", basePrice: 99, image: getPath("stickers", 18), description: "He will cover you with his feathers.", hasVariants: false },
+    { id: "st19", category: "Stickers", name: "Spread Kindness", basePrice: 99, image: getPath("stickers", 19), description: "Inspirational kindness sticker.", hasVariants: false },
+    
+    // --- Page 13 Items ---
+    { id: "st20", category: "Stickers", name: "Dream Big Stay Humble", basePrice: 99, image: getPath("stickers", 20), description: "Balanced life advice sticker.", hasVariants: false },
+    { id: "st21", category: "Stickers", name: "Dare to Dream", basePrice: 99, image: getPath("stickers", 21), description: "Motivational sticker for dreamers.", hasVariants: false },
+    { id: "st22", category: "Stickers", name: "Rejoice Always", basePrice: 99, image: getPath("stickers", 22), description: "1 Thessalonians 5:16.", hasVariants: false },
+    { id: "st23", category: "Stickers", name: "Hello Child of God", basePrice: 99, image: getPath("stickers", 23), description: "Identity name tag sticker.", hasVariants: false },
+    { id: "st24", category: "Stickers", name: "I'd Rather Have Jesus", basePrice: 99, image: getPath("stickers", 24), description: "Statement of priority and devotion.", hasVariants: false },
+    { id: "st25", category: "Stickers", name: "Agape", basePrice: 99, image: getPath("stickers", 25), description: "Greek word for unconditional love.", hasVariants: false },
+    { id: "st26", category: "Stickers", name: "You Are Chosen", basePrice: 99, image: getPath("stickers", 26), description: "Identity sticker.", hasVariants: false },
+    { id: "st27", category: "Stickers", name: "You Are Worthy", basePrice: 99, image: getPath("stickers", 27), description: "Self-worth affirmation.", hasVariants: false },
+    { id: "st28", category: "Stickers", name: "Count Blessings", basePrice: 99, image: getPath("stickers", 28), description: "Gratitude reminder.", hasVariants: false },
+    { id: "st29", category: "Stickers", name: "Overwhelming Love", basePrice: 99, image: getPath("stickers", 29), description: "Reckless love of God.", hasVariants: false },
+    { id: "st30", category: "Stickers", name: "Thy Will Be Done", basePrice: 99, image: getPath("stickers", 30), description: "Prayer sticker.", hasVariants: false },
+    { id: "st31", category: "Stickers", name: "Original Love Letters", basePrice: 99, image: getPath("stickers", 31), description: "Bible with OXOX motif.", hasVariants: false },
+    { id: "st32", category: "Stickers", name: "Faith Typography", basePrice: 99, image: getPath("stickers", 32), description: "Creative Faith text design.", hasVariants: false },
+    { id: "st33", category: "Stickers", name: "Butterfly", basePrice: 99, image: getPath("stickers", 33), description: "Colorful butterfly sticker.", hasVariants: false },
+    { id: "st34", category: "Stickers", name: "Honey Pot", basePrice: 99, image: getPath("stickers", 34), description: "Cute honey pot illustration.", hasVariants: false },
+    { id: "st35", category: "Stickers", name: "YHWH Typography", basePrice: 99, image: getPath("stickers", 35), description: "Stylized Name of God.", hasVariants: false },
+    { id: "st36", category: "Stickers", name: "Jesus Super Hero", basePrice: 99, image: getPath("stickers", 36), description: "Jesus standing with superheroes.", hasVariants: false },
+    { id: "st37", category: "Stickers", name: "Good Shepherd Cute", basePrice: 99, image: getPath("stickers", 37), description: "Kawaii style Jesus with sheep.", hasVariants: false },
+    { id: "st38", category: "Stickers", name: "Blessed Script", basePrice: 99, image: getPath("stickers", 38), description: "Script font Blessed sticker.", hasVariants: false },
 
-      // --- LAPTOP SKINS ---
-        {
-          id: "ls1",
-          category: "Laptop Skins",
-          name: "Thy Will Be Done – Gethsemane",
-          basePrice: 899,
-          image: "https://placeholder.co/ls1.jpg",
-          description: "Powerful artwork depicting Jesus in surrender at Gethsemane with the words 'Thy will be done'. A bold, faith-filled statement skin.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls2",
-          category: "Laptop Skins",
-          name: "We Love Because He Loved Us",
-          basePrice: 899,
-          image: "https://placeholder.co/ls2.jpg",
-          description: "Text-based faith design inspired by 1 John 4:19, combining scripture with modern visual elements.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls3",
-          category: "Laptop Skins",
-          name: "Virgin Mary – Sacred Art",
-          basePrice: 899,
-          image: "https://placeholder.co/ls3.jpg",
-          description: "Traditional Marian illustration with a reverent, devotional aesthetic suitable for daily inspiration.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls4",
-          category: "Laptop Skins",
-          name: "Daughter of the King – Illustration",
-          basePrice: 899,
-          image: "https://placeholder.co/ls4.jpg",
-          description: "Faith-based identity artwork celebrating dignity, strength, and belonging in Christ.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls5",
-          category: "Laptop Skins",
-          name: "Stained Glass Cross",
-          basePrice: 999,
-          image: "https://placeholder.co/ls5.jpg",
-          description: "Vibrant stained-glass cross artwork inspired by cathedral windows, rich in colour and symbolism.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls6",
-          category: "Laptop Skins",
-          name: "Of All Nations – Go & Make Disciples",
-          basePrice: 899,
-          image: "https://placeholder.co/ls6.jpg",
-          description: "Mission-focused design inspired by the Great Commission, combining text and symbolic illustration.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls7",
-          category: "Laptop Skins",
-          name: "Overwhelming Reckless Love",
-          basePrice: 899,
-          image: "https://placeholder.co/ls7.jpg",
-          description: "Expressive typographic skin inspired by the theme of God’s relentless love.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls8",
-          category: "Laptop Skins",
-          name: "Eucharistic Monstrance – Gold",
-          basePrice: 999,
-          image: "https://placeholder.co/ls8.jpg",
-          description: "Sacred Eucharistic artwork featuring a golden monstrance, ideal for reverent, devotional expression.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls9",
-          category: "Laptop Skins",
-          name: "Your Will Be Done – Luke 22:42",
-          basePrice: 999,
-          image: "https://placeholder.co/ls9.jpg",
-          description: "Dramatic artwork of Jesus praying, paired with Luke 22:42, symbolising surrender and obedience.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls10",
-          category: "Laptop Skins",
-          name: "Live With Purpose – Faith Values",
-          basePrice: 899,
-          image: "https://placeholder.co/ls10.jpg",
-          description: "Modern typographic list encouraging faith-driven living: love, work, serve, believe.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls11",
-          category: "Laptop Skins",
-          name: "White & Gold Marble Abstract",
-          basePrice: 899,
-          image: "https://placeholder.co/ls11.jpg",
-          description: "Elegant marble texture with white, grey, and gold tones for a clean, premium aesthetic.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls12",
-          category: "Laptop Skins",
-          name: "Blue & Gold Marble Abstract",
-          basePrice: 899,
-          image: "https://placeholder.co/ls12.jpg",
-          description: "Flowing blue marble design with gold accents, subtle yet striking.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-        {
-          id: "ls13",
-          category: "Laptop Skins",
-          name: "Teal Rock & Gold Texture",
-          basePrice: 899,
-          image: "https://placeholder.co/ls13.jpg",
-          description: "Textured abstract artwork inspired by stone and mineral formations with gold detailing.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls14",
-          category: "Laptop Skins",
-          name: "The Boss – Jesus (Minimal)",
-          basePrice: 899,
-          image: "https://placeholder.co/ls14.jpg",
-          description: "Minimal illustrated Jesus with bold 'The Boss' typography on a clean background.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls15",
-          category: "Laptop Skins",
-          name: "Wings of Glory",
-          basePrice: 899,
-          image: "https://placeholder.co/ls15.jpg",
-          description: "Vibrant multicolour angel wings on a dark background, symbolising protection and strength.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls16",
-          category: "Laptop Skins",
-          name: "Fishers of Men",
-          basePrice: 899,
-          image: "https://placeholder.co/ls16.jpg",
-          description: "Artistic illustration of fish forming a spiral with the words 'Fishers of Men'.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls17",
-          category: "Laptop Skins",
-          name: "Be Strong and Courageous – Joshua 1:9",
-          basePrice: 899,
-          image: "https://placeholder.co/ls17.jpg",
-          description: "Scripture-based design inspired by Joshua 1:9, encouraging courage and faith.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
-      
-        {
-          id: "ls18",
-          category: "Laptop Skins",
-          name: "XOXO  The Original Love Letters",
-          basePrice: 899,
-          image: "https://placeholder.co/ls18.jpg",
-          description: "Creative symbolic design representing Christ’s love through the cross and crown of thorns.",
-          hasVariants: true,
-          variants: [{ name: "Size", options: ["13-inch", "14-inch", "15.6-inch"] }]
-        },
+    /* --- PREVIOUS ITEMS (Shifted down: Old st32 became st39, etc.) ---
+    { id: "st39", category: "Stickers", name: "Jesus Heals", basePrice: 99, image: getPath("stickers", 39), description: "Simple and powerful healing declaration.", hasVariants: false },
+    { id: "st40", category: "Stickers", name: "Faith (Script)", basePrice: 99, image: getPath("stickers", 40), description: "Script typography Faith.", hasVariants: false },
+    { id: "st41", category: "Stickers", name: "Holy Bible", basePrice: 99, image: getPath("stickers", 41), description: "Iconic Bible design.", hasVariants: false },
+    { id: "st42", category: "Stickers", name: "Spirit Lead Me", basePrice: 99, image: getPath("stickers", 42), description: "Prayer for guidance.", hasVariants: false },
+    { id: "st43", category: "Stickers", name: "Love Never Fails", basePrice: 99, image: getPath("stickers", 43), description: "1 Corinthians 13.", hasVariants: false },
+    { id: "st44", category: "Stickers", name: "Faith Over Fear", basePrice: 99, image: getPath("stickers", 44), description: "Bold faith statement.", hasVariants: false },
+    { id: "st45", category: "Stickers", name: "Be Still", basePrice: 99, image: getPath("stickers", 45), description: "Be still and know that I am God.", hasVariants: false },
+    { id: "st46", category: "Stickers", name: "Jesus Is King", basePrice: 99, image: getPath("stickers", 46), description: "Bold declaration of kingship.", hasVariants: false },
+    { id: "st47", category: "Stickers", name: "Love God Love People", basePrice: 99, image: getPath("stickers", 47), description: "The greatest commandments.", hasVariants: false },
+    { id: "st48", category: "Stickers", name: "Set Your Mind", basePrice: 99, image: getPath("stickers", 48), description: "Set your mind on things above.", hasVariants: false },
+    { id: "st49", category: "Stickers", name: "His Love Knows No Limits", basePrice: 99, image: getPath("stickers", 49), description: "Limitless love design.", hasVariants: false },
+    { id: "st50", category: "Stickers", name: "Trust In The Lord", basePrice: 99, image: getPath("stickers", 50), description: "Proverbs 3:5.", hasVariants: false },
+    { id: "st51", category: "Stickers", name: "She Is Worthy", basePrice: 99, image: getPath("stickers", 51), description: "Proverbs 31.", hasVariants: false },
+    { id: "st52", category: "Stickers", name: "Faith Can Move Mountains", basePrice: 99, image: getPath("stickers", 52), description: "Mountain moving faith.", hasVariants: false },
+    { id: "st53", category: "Stickers", name: "Psalm 23", basePrice: 99, image: getPath("stickers", 53), description: "The Lord is my shepherd.", hasVariants: false },
+    { id: "st54", category: "Stickers", name: "Light of the World", basePrice: 99, image: getPath("stickers", 54), description: "You are the light of the world.", hasVariants: false },
+    { id: "st55", category: "Stickers", name: "Woman of God", basePrice: 99, image: getPath("stickers", 55), description: "Identity affirmation.", hasVariants: false },
+    { id: "st56", category: "Stickers", name: "He Has A Plan", basePrice: 99, image: getPath("stickers", 56), description: "He has a plan and I have a purpose.", hasVariants: false },
+*/
 
-        // --- BADGES ---
-        
-        { id: "bd1", category: "Badges", name: "Butterfly Faith Badge", basePrice: 79, image: "https://placeholder.co/bd1.jpg", description: "Butterfly illustration symbolising transformation.", hasVariants: false },
-        { id: "bd2", category: "Badges", name: "Daughter of the King Badge", basePrice: 79, image: "https://placeholder.co/bd2.jpg", description: "Identity badge affirming royal belonging.", hasVariants: false },
-        { id: "bd3", category: "Badges", name: "Cross Minimal Badge", basePrice: 79, image: "https://placeholder.co/bd3.jpg", description: "Simple cross illustration.", hasVariants: false },
-        { id: "bd4", category: "Badges", name: "Jesus Loves You Badge", basePrice: 79, image: "https://placeholder.co/bd4.jpg", description: "Gentle reminder of Christ’s love.", hasVariants: false },
-        { id: "bd5", category: "Badges", name: "You Are Loved Badge", basePrice: 79, image: "https://placeholder.co/bd5.jpg", description: "Affirmation badge with soft floral art.", hasVariants: false },
-        { id: "bd6", category: "Badges", name: "Virgin Mary Badge", basePrice: 79, image: "https://placeholder.co/bd6.jpg", description: "Illustrated Marian devotional badge.", hasVariants: false },
-        { id: "bd7", category: "Badges", name: "Wings of Glory Badge", basePrice: 79, image: "https://placeholder.co/bd7.jpg", description: "Colourful wings symbolising protection.", hasVariants: false },
-        { id: "bd8", category: "Badges", name: "Heart Faith Badge", basePrice: 79, image: "https://placeholder.co/bd8.jpg", description: "Heart illustration representing love and faith.", hasVariants: false },
-        { id: "bd9", category: "Badges", name: "Coffee Cup Badge", basePrice: 79, image: "https://placeholder.co/bd9.jpg", description: "Cute illustrated coffee cup.", hasVariants: false },
-        { id: "bd10", category: "Badges", name: "Cat Illustration Badge", basePrice: 79, image: "https://placeholder.co/bd10.jpg", description: "Playful illustrated cat badge.", hasVariants: false },
-        { id: "bd11", category: "Badges", name: "Jesus Illustration Badge", basePrice: 79, image: "https://placeholder.co/bd11.jpg", description: "Soft illustrated portrait of Jesus.", hasVariants: false },
-        { id: "bd12", category: "Badges", name: "Faith Over Fear Badge", basePrice: 79, image: "https://placeholder.co/bd12.jpg", description: "Bold typography promoting courage in faith.", hasVariants: false },
-        { id: "bd13", category: "Badges", name: "Forever Kinda Love Badge", basePrice: 79, image: "https://placeholder.co/bd13.jpg", description: "Matthew 28:20 inspired love reminder.", hasVariants: false },
-        { id: "bd14", category: "Badges", name: "Holy Bible Badge", basePrice: 79, image: "https://placeholder.co/bd14.jpg", description: "Illustrated Bible badge.", hasVariants: false },
-        { id: "bd15", category: "Badges", name: "Angel Embrace Badge", basePrice: 79, image: "https://placeholder.co/bd15.jpg", description: "Angel illustration symbolising protection.", hasVariants: false }
-    ];
+    // FILE 1: BADGES (Page 15)
+    { id: "bd1", category: "Badges", name: "Daughter of the King Badge", basePrice: 59, image: getPath("badges", 1), description: "Royal identity badge.", hasVariants: false },
+    { id: "bd2", category: "Badges", name: "Psalm 91:4 Badge", basePrice: 59, image: getPath("badges", 2), description: "Feathers protection badge.", hasVariants: false },
+    { id: "bd3", category: "Badges", name: "Jesus Loves You Badge", basePrice: 59, image: getPath("badges", 3), description: "Message of love badge.", hasVariants: false },
+    { id: "bd4", category: "Badges", name: "You Are Loved Badge", basePrice: 59, image: getPath("badges", 4), description: "Affirmation badge.", hasVariants: false },
+    { id: "bd5", category: "Badges", name: "Faith Badge", basePrice: 59, image: getPath("badges", 5), description: "Faith badge.", hasVariants: false },
+    { id: "bd6", category: "Badges", name: "Coffee Badge", basePrice: 59, image: getPath("badges", 6), description: "Coffee lover badge.", hasVariants: false },
+    { id: "bd7", category: "Badges", name: "She Is Worthy Badge", basePrice: 59, image: getPath("badges", 7), description: "Proverbs 31 badge.", hasVariants: false },
+    { id: "bd8", category: "Badges", name: "Fight My Battles Badge", basePrice: 59, image: getPath("badges", 8), description: "Worship song badge.", hasVariants: false },
+    { id: "bd9", category: "Badges", name: "Plan and Purpose Badge", basePrice: 59, image: getPath("badges", 9), description: "He has a plan badge.", hasVariants: false },
+    { id: "bd10", category: "Badges", name: "Love Badge", basePrice: 59, image: getPath("badges", 10), description: "Love badge.", hasVariants: false },
+    { id: "bd11", category: "Badges", name: "Faith Over Fear Badge", basePrice: 59, image: getPath("badges", 11), description: "Faith over fear badge.", hasVariants: false },
+    { id: "bd12", category: "Badges", name: "Love Never Fails Badge", basePrice: 59, image: getPath("badges", 12), description: "Love never fails badge.", hasVariants: false },
+    { id: "bd13", category: "Badges", name: "Forever Kinda Love Badge", basePrice: 59, image: getPath("badges", 13), description: "Matt 28:20 badge.", hasVariants: false },
+    { id: "bd14", category: "Badges", name: "Holy Bible Badge", basePrice: 59, image: getPath("badges", 14), description: "Bible icon badge.", hasVariants: false },
+    { id: "bd15", category: "Badges", name: "Set Your Mind Badge", basePrice: 59, image: getPath("badges", 15), description: "Colossians 3:2 badge.", hasVariants: false },
+    { id: "bd16", category: "Badges", name: "Butterfly Badge", basePrice: 59, image: getPath("badges", 16), description: "Butterfly illustration.", hasVariants: false },
+    { id: "bd17", category: "Badges", name: "Floral Cross Badge", basePrice: 59, image: getPath("badges", 17), description: "Cross with flowers.", hasVariants: false },
+    { id: "bd18", category: "Badges", name: "Cross & Heart Badge", basePrice: 59, image: getPath("badges", 18), description: "Symbol of faith and love.", hasVariants: false },
+    { id: "bd19", category: "Badges", name: "Jesus Hug Badge", basePrice: 59, image: getPath("badges", 19), description: "Jesus hugging a girl illustration.", hasVariants: false },
+    { id: "bd20", category: "Badges", name: "Cute Shepherd Badge", basePrice: 59, image: getPath("badges", 20), description: "Cute Jesus with sheep.", hasVariants: false },
+    { id: "bd21", category: "Badges", name: "Mary Full Length", basePrice: 59, image: getPath("badges", 21), description: "Full portrait of Mother Mary.", hasVariants: false },
+    { id: "bd22", category: "Badges", name: "Mary Portrait", basePrice: 59, image: getPath("badges", 22), description: "Close-up portrait of Mother Mary.", hasVariants: false },
+    { id: "bd23", category: "Badges", name: "Coffee Cat Badge", basePrice: 59, image: getPath("badges", 23), description: "Whimsical coffee and cat design.", hasVariants: false },
+    { id: "bd24", category: "Badges", name: "Jesus Minimal Art", basePrice: 59, image: getPath("badges", 24), description: "Minimalist art of Jesus.", hasVariants: false },
+    { id: "bd25", category: "Badges", name: "Good Shepherd Badge", basePrice: 59, image: getPath("badges", 25), description: "Jesus holding a lamb.", hasVariants: false },
+    
+    // FILE 2: BOOKMARKS (Pages 1-4)
+    { id: "bm1", category: "Bookmarks", name: "God is Love", basePrice: 49, image: getPath("bookmarks", 1), description: "Bold typographic statement.", hasVariants: false },
+    { id: "bm2", category: "Bookmarks", name: "Plans to Prosper", basePrice: 49, image: getPath("bookmarks", 2), description: "Jeremiah 29:11 - Hope and a future.", hasVariants: false },
+    { id: "bm3", category: "Bookmarks", name: "Faith Definition", basePrice: 49, image: getPath("bookmarks", 3), description: "Hebrews 11:1 - Assurance of things hoped for.", hasVariants: false },
+    { id: "bm4", category: "Bookmarks", name: "First Loved", basePrice: 49, image: getPath("bookmarks", 4), description: "1 John 4:19 - We love because He first loved us.", hasVariants: false },
+    { id: "bm5", category: "Bookmarks", name: "Be Still", basePrice: 49, image: getPath("bookmarks", 5), description: "Be Still and know that I am GOD.", hasVariants: false },
+    { id: "bm6", category: "Bookmarks", name: "Let Your Light Shine", basePrice: 49, image: getPath("bookmarks", 6), description: "Inspirational light bulb or sun motif.", hasVariants: false },
+    { id: "bm7", category: "Bookmarks", name: "Restless Hearts", basePrice: 49, image: getPath("bookmarks", 7), description: "Our hearts are restless until they rest in you.", hasVariants: false },
+    { id: "bm8", category: "Bookmarks", name: "Dream", basePrice: 49, image: getPath("bookmarks", 8), description: "Simple dream typography.", hasVariants: false },
+    { id: "bm9", category: "Bookmarks", name: "As The Deer", basePrice: 49, image: getPath("bookmarks", 9), description: "Psalm 42:1 - Spiritual thirst and longing.", hasVariants: false },
+    { id: "bm10", category: "Bookmarks", name: "God So Loved", basePrice: 49, image: getPath("bookmarks", 10), description: "John 3:16 - The Gospel message.", hasVariants: false },
+    { id: "bm11", category: "Bookmarks", name: "New Creation", basePrice: 49, image: getPath("bookmarks", 11), description: "2 Corinthians 5:17 - The old has gone, the new is here.", hasVariants: false },
+    { id: "bm12", category: "Bookmarks", name: "Faith Moves Mountains", basePrice: 49, image: getPath("bookmarks", 12), description: "Motivational faith design.", hasVariants: false },
+    { id: "bm13", category: "Bookmarks", name: "Renew Strength", basePrice: 49, image: getPath("bookmarks", 13), description: "Isaiah 40:31 - Eagle imagery.", hasVariants: false },
+    { id: "bm14", category: "Bookmarks", name: "Lord With You", basePrice: 49, image: getPath("bookmarks", 14), description: "The Lord is with you wherever you go.", hasVariants: false },
+    { id: "bm15", category: "Bookmarks", name: "Bloom Where Planted", basePrice: 49, image: getPath("bookmarks", 15), description: "Floral design: Bloom where you bly.", hasVariants: false },
+    { id: "bm16", category: "Bookmarks", name: "Greater Love", basePrice: 49, image: getPath("bookmarks", 16), description: "John 15:13 - Greater love has no one than this.", hasVariants: false },
+    { id: "bm17", category: "Bookmarks", name: "Faith Hope Love", basePrice: 49, image: getPath("bookmarks", 17), description: "1 Corinthians 13:13.", hasVariants: false },
+    { id: "bm18", category: "Bookmarks", name: "Stars Worship", basePrice: 49, image: getPath("bookmarks", 18), description: "If the stars were made to worship so will I.", hasVariants: false },
+    { id: "bm19", category: "Bookmarks", name: "New Mercies", basePrice: 49, image: getPath("bookmarks", 19), description: "Mercies are new every morning.", hasVariants: false },
+    { id: "bm20", category: "Bookmarks", name: "Done in Love", basePrice: 49, image: getPath("bookmarks", 20), description: "1 Corinthians 16:14 - Let all that you do be done in love.", hasVariants: false },
+    { id: "bm21", category: "Bookmarks", name: "Mountain Range Watercolor", basePrice: 49, image: getPath("bookmarks", 21), description: "Serene watercolor landscape.", hasVariants: false },
+    { id: "bm22", category: "Bookmarks", name: "Green Floral Cross", basePrice: 49, image: getPath("bookmarks", 22), description: "Cross design entwined with fresh greenery.", hasVariants: false },
+    { id: "bm23", category: "Bookmarks", name: "Lost in the Pages", basePrice: 49, image: getPath("bookmarks", 23), description: "For the avid reader.", hasVariants: false },
+    { id: "bm24", category: "Bookmarks", name: "White Floral Cross", basePrice: 49, image: getPath("bookmarks", 24), description: "Elegant cross with white floral accents.", hasVariants: false },
+    { id: "bm25", category: "Bookmarks", name: "Walking on Water", basePrice: 49, image: getPath("bookmarks", 25), description: "Jesus walking on water illustration.", hasVariants: false },
+    { id: "bm26", category: "Bookmarks", name: "Jesus Hugs", basePrice: 49, image: getPath("bookmarks", 26), description: "Heartwarming illustration of Jesus hugging a girl.", hasVariants: false },
+    { id: "bm27", category: "Bookmarks", name: "Serene Boat", basePrice: 49, image: getPath("bookmarks", 27), description: "Peaceful boat on a river scene.", hasVariants: false },
+    { id: "bm28", category: "Bookmarks", name: "Sunflowers", basePrice: 49, image: getPath("bookmarks", 28), description: "Bright and cheerful sunflower design.", hasVariants: false },
+    { id: "bm29", category: "Bookmarks", name: "One Page at a Time", basePrice: 49, image: getPath("bookmarks", 29), description: "Reading motivation design.", hasVariants: false },
+    { id: "bm30", category: "Bookmarks", name: "Fir Tree", basePrice: 49, image: getPath("bookmarks", 30), description: "Minimalist fir tree illustration.", hasVariants: false },
+    { id: "bm31", category: "Bookmarks", name: "Sunrise Sketch", basePrice: 49, image: getPath("bookmarks", 31), description: "Artistic pencil sketch of a sunrise.", hasVariants: false },
+    { id: "bm32", category: "Bookmarks", name: "God's Hand Reaching", basePrice: 49, image: getPath("bookmarks", 32), description: "Divine connection illustration.", hasVariants: false },
+    { id: "bm33", category: "Bookmarks", name: "Dreams Blossom", basePrice: 49, image: getPath("bookmarks", 33), description: "Dreams blossom in silence.", hasVariants: false },
+    { id: "bm34", category: "Bookmarks", name: "Breathe Hope Bloom", basePrice: 49, image: getPath("bookmarks", 34), description: "Breathe hope, bloom, flourish.", hasVariants: false },
+    { id: "bm35", category: "Bookmarks", name: "Do Not Fear", basePrice: 49, image: getPath("bookmarks", 35), description: "Do not fear for I am with you.", hasVariants: false },
+    
+    // FILE 2: POSTERS (Pages 5-End)
+    { id: "po1", category: "Posters", name: "Faith Hope", basePrice: 299, image: getPath("posters", 1), description: "Hebrews 11:1 variant.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po2", category: "Posters", name: "Plans to Prosper", basePrice: 299, image: getPath("posters", 2), description: "Jeremiah 29:11 Poster.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po3", category: "Posters", name: "God So Loved", basePrice: 299, image: getPath("posters", 3), description: "John 3:16 Poster.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po4", category: "Posters", name: "Think Positively", basePrice: 299, image: getPath("posters", 4), description: "List of positive habits.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po5", category: "Posters", name: "Whatever It Takes", basePrice: 299, image: getPath("posters", 5), description: "Motivational bold text.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po6", category: "Posters", name: "Fearfully & Wonderfully Made", basePrice: 299, image: getPath("posters", 6), description: "Psalm 139:14 declaration of self-worth.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po7", category: "Posters", name: "Psalm 91 Full", basePrice: 299, image: getPath("posters", 7), description: "The complete text of the Psalm of protection.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po8", category: "Posters", name: "Saved The World", basePrice: 299, image: getPath("posters", 8), description: "John 3:16-17.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po9", category: "Posters", name: "Stay Pawsitive", basePrice: 299, image: getPath("posters", 9), description: "Cute animal pun design.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po10", category: "Posters", name: "Hallelujah Definition", basePrice: 299, image: getPath("posters", 10), description: "Dictionary style definition of the Hebrew word.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po11", category: "Posters", name: "While We Were Sinners", basePrice: 299, image: getPath("posters", 11), description: "Romans 5:8 - Christ died for us.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po12", category: "Posters", name: "Forever Kinda Love", basePrice: 299, image: getPath("posters", 12), description: "Matthew 28:20 inspired romantic-style faith design.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po13", category: "Posters", name: "Ave Maria", basePrice: 299, image: getPath("posters", 13), description: "Gentle Marian illustration suitable for prayer corners.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po14", category: "Posters", name: "Saved By Grace", basePrice: 299, image: getPath("posters", 14), description: "Ephesians 2:8.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po15", category: "Posters", name: "Original Love Letters", basePrice: 299, image: getPath("posters", 15), description: "Bible OXOX Design.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po16", category: "Posters", name: "I Am The Way", basePrice: 299, image: getPath("posters", 16), description: "John 14:6 declaration: Way, Truth, and Life.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po17", category: "Posters", name: "Psalm 23", basePrice: 299, image: getPath("posters", 17), description: "The Lord is my shepherd.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po18", category: "Posters", name: "Psalm 91:4", basePrice: 299, image: getPath("posters", 18), description: "Feathers protection poster.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po19", category: "Posters", name: "I'd Rather Have Jesus", basePrice: 299, image: getPath("posters", 19), description: "Devotional poster.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po20", category: "Posters", name: "Blessed", basePrice: 299, image: getPath("posters", 20), description: "Simple Blessed Typography.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po21", category: "Posters", name: "You Are Loved", basePrice: 299, image: getPath("posters", 21), description: "Affirmation poster.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po22", category: "Posters", name: "Holy Holy Holy", basePrice: 299, image: getPath("posters", 22), description: "Worship declaration: Lord God Almighty.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po23", category: "Posters", name: "Trust In The Lord", basePrice: 299, image: getPath("posters", 23), description: "Proverbs 3:5 - With all your heart.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po24", category: "Posters", name: "Chosen Loved Beautiful", basePrice: 299, image: getPath("posters", 24), description: "Affirmation of beauty and worth.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po25", category: "Posters", name: "Daughter of the King – Dark", basePrice: 299, image: getPath("posters", 25), description: "Alternate illustration celebrating representation.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po26", category: "Posters", name: "The Boss Jesus", basePrice: 299, image: getPath("posters", 26), description: "Bold poster portraying Jesus as authority and leader.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po27", category: "Posters", name: "Created with Purpose", basePrice: 299, image: getPath("posters", 27), description: "Affirmation of divine purpose.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po28", category: "Posters", name: "Watercolor Cross", basePrice: 299, image: getPath("posters", 28), description: "Artistic watercolor cross design.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po29", category: "Posters", name: "The 100th Sheep", basePrice: 299, image: getPath("posters", 29), description: "Wanted: The lost sheep found by the Shepherd.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po30", category: "Posters", name: "Jesus Minimal Art", basePrice: 299, image: getPath("posters", 30), description: "Modern minimalist digital art of Jesus.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po31", category: "Posters", name: "Good Shepherd & Sheep", basePrice: 299, image: getPath("posters", 31), description: "Classic illustration of the Shepherd caring for His flock.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po32", category: "Posters", name: "Walking on Water", basePrice: 299, image: getPath("posters", 32), description: "Miracle of Jesus walking on water.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po33", category: "Posters", name: "Jesus Hugs", basePrice: 299, image: getPath("posters", 33), description: "Heartwarming illustration of Jesus hugging a girl.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po34", category: "Posters", name: "Floral Cross", basePrice: 299, image: getPath("posters", 34), description: "Cross adorned with beautiful flowers.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po35", category: "Posters", name: "Purple Heart", basePrice: 299, image: getPath("posters", 35), description: "Spiritual heart design in purple.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po36", category: "Posters", name: "The Good Shepherd", basePrice: 299, image: getPath("posters", 36), description: "Portrait of Jesus as the Good Shepherd.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    { id: "po37", category: "Posters", name: "Daughter of the King II", basePrice: 299, image: getPath("posters", 37), description: "Alternative design celebrating royal identity.", hasVariants: true, variants: [{ name: "Size", options: ["A5", "A4", "A3"] }] },
+    
+    // --- DIARIES ---
+    { id: "di1", category: "Diaries", name: "Watercolor Cross Diary", basePrice: 249, image: getPath("diaries", 1), description: "A soft watercolor cross design symbolising sacrifice, grace, and quiet reflection. Ideal for prayer journaling and personal notes.", hasVariants: false },
+    { id: "di2", category: "Diaries", name: "Trust in the Lord Diary", basePrice: 249, image: getPath("diaries", 2), description: "Inspired by Proverbs, this diary encourages surrender, faith, and wholehearted trust in God.", hasVariants: false },
+    { id: "di3", category: "Diaries", name: "For I Know the Plans – Daughter of the King", basePrice: 249, image: getPath("diaries", 3), description: "A Jeremiah 29:11 inspired design blended with Daughter of the King identity. Created for purpose-filled journaling.", hasVariants: false },
+    { id: "di4", category: "Diaries", name: "The Boss – Jesus (The Chosen)", basePrice: 249, image: getPath("diaries", 4), description: "Bold diary design portraying Jesus as authority and leader, inspired by The Chosen series.", hasVariants: false },
+    { id: "di5", category: "Diaries", name: "Chosen, Loved, Beautiful Diary", basePrice: 249, image: getPath("diaries", 5), description: "Affirmation-based diary celebrating identity, worth, and belonging in Christ.", hasVariants: false },
+    { id: "di6", category: "Diaries", name: "Daughter of the King – Light Skin Diary", basePrice: 249, image: getPath("diaries", 6), description: "An identity-affirming diary reminding you of your royal worth and calling in Christ.", hasVariants: false },
+    { id: "di7", category: "Diaries", name: "Daughter of the King – Dark Skin Diary", basePrice: 249, image: getPath("diaries", 7), description: "A representation-focused design celebrating dignity, identity, and faith.", hasVariants: false },
+    { id: "di8", category: "Diaries", name: "Psalm 91 – Under His Wings Diary", basePrice: 249,image: getPath("diaries", 8), description: "Psalm 91:4 inspired diary highlighting refuge, protection, and God’s covering wings.", hasVariants: false },
+    { id: "di9", category: "Diaries", name: "Yeshua – Lion of Judah", basePrice: 249, image: getPath("diaries", 9)", description: "Powerful artwork of Yeshua as the Lion of Judah, symbolising authority, victory, and kingship.", hasVariants: false },
+    { id: "di10", category: "Diaries", name: "With God All Things Are Possible", basePrice: 249, image: getPath("diaries", 10), description: "Faith-forward typography diary inspired by Matthew 19:26, created to fuel hope and perseverance.", hasVariants: false },
+    { id: "di11", category: "Diaries", name: "Just a Girl Who Loves Jesus", basePrice: 249, iimage: getPath("diaries", 11), description: "Soft, modern diary design celebrating simple, everyday love for Jesus.", hasVariants: false },
+    { id: "di12", category: "Diaries", name: "Saved by Grace Diary", basePrice: 249, image: getPath("diaries", 12), description: "Minimal typography diary celebrating salvation through grace alone.", hasVariants: false },
+    { id: "di13", category: "Diaries", name: "Let All That You Do Be Done in Love", basePrice: 249, image: getPath("diaries", 13), description: "Scripture-inspired diary encouraging love as the foundation of all actions and decisions.", hasVariants: false },
   
-// This simulates a Database Query
+  
+];
+
+// Helper functions (Optional use, but good to have)
 export async function getProducts() {
-  return PRODUCTS;
+    return PRODUCTS;
 }
 
 export async function getProductById(id) {
-  return PRODUCTS.find(p => p.id === id);
+    return PRODUCTS.find(p => p.id === id);
 }
